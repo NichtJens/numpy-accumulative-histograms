@@ -68,7 +68,7 @@ if __name__ == "__main__":
     for _ in range(1000):
         x, y = np.random.random((3,)), np.random.random((3,))
         h.fill(x, y)
-        plt.imshow(h.data[2])
+        plt.pcolor(*h.data)
         plt.show()
 
 
